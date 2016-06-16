@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adu.main.mytimertask">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--============================QQ==================================-->
+        <activity
+                android:name="com.tencent.tauth.AuthActivity"
+                android:noHistory="true"
+                android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1105357085" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            ></activity>
+        <!--============================QQ==================================-->
+        <activity
+                android:name=".recyview.MyBlogActivity"
+                android:label="我的博客"
+                android:theme="@style/AppThemes"
+                ></activity>
+        <activity
+                android:name=".MainActivity"
+                android:label="登录"
+        ></activity>
+        <activity
+                android:name=".fragment.TodayActivity"
+                android:label="TabLayout"
+                android:theme="@style/AppThemes"
+        ></activity>
+        <activity
+                android:name=".login.OtherLoginActivity"
+                android:label="请选择登录"
+                android:theme="@style/AppThemes"
+        ></activity>
+
+        <!--========================weibo=============================-->
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:windowSoftInputMode="adjustResize"
+                  android:exported="false" >
+        </activity>
+        <service
+                android:name="com.sina.weibo.sdk.net.DownloadService"
+                android:exported="false" ></service>
+        <!--========================weibo==============================-->
+        <activity
+                android:name=".ZhiHuActivity"
+                android:label="知乎日报"
+                android:theme="@style/AppThemes"
+        ></activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:label="日报内容"
+            android:theme="@style/AppThemes"
+            ></activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:theme="@style/AppTheme"
+            ></activity>
+    </application>
+
+</manifest>

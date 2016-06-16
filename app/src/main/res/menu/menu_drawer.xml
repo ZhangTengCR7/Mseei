@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_blog"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="我的博客" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="知乎日报"
+        />
+
+        <item
+            android:id="@+id/nav_version"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="今日头条" />
+        <item
+            android:id="@+id/nav_more"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="更多精彩" />
+    </group>
+
+    <item android:title="Sub Title">
+        <menu>
+            <item
+                android:id="@+id/nav_sub1"
+                android:title="副标题1"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/nav_sub2"
+                android:title="副标题2"
+                android:checkable="true"/>
+        </menu>
+    </item>
+</menu>

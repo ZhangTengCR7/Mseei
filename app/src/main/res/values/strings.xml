@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Messi</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="tv_my_name">杜鹏程</string>
+    <string name="tv_my_csdn">http://blog.csdn.net/m366917</string>
+    <string name="weibosdk_demo_token_to_string_format_1">Token：%1$s \n有效期：%2$s</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+</resources>

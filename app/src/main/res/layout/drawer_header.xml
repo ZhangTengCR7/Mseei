@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="200dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="?attr/colorPrimary"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <com.adu.main.mytimertask.view.CircleImageView
+            android:layout_marginTop="25dp"
+            android:id="@+id/iv_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/icon"
+            app:border_width="2dp"
+            app:border_color="@color/colorCircle"
+
+        />
+
+    <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/tv_name"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_my_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusableInTouchMode="true"
+            android:id="@+id/tv_csdn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/tv_my_csdn" />
+</LinearLayout>
